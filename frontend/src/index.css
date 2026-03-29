@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-slate-200;
+  }
+  
+  body {
+    @apply bg-gradient-to-br from-slate-50 to-blue-50 text-slate-900;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer components {
+  /* Glass morphism effect */
+  .glass {
+    @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-xl;
+  }
+  
+  /* Modern card styles */
+  .card {
+    @apply glass rounded-2xl p-6 transition-all duration-500 ease-out hover:shadow-2xl hover:scale-[1.02] hover:-translate-y-1;
+  }
+  
+  /* Modern input styles */
+  .input-modern {
+    @apply w-full px-4 py-3 bg-white/50 border border-slate-200 rounded-xl 
+           focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 focus:bg-white/70
+           transition-all duration-300 ease-out placeholder:text-slate-400
+           hover:bg-white/60 hover:border-slate-300;
+  }
+  
+  /* Primary button styles */
+  .btn-primary {
+    @apply w-full px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 
+           text-white font-medium rounded-xl shadow-lg shadow-blue-500/25
+           hover:shadow-xl hover:shadow-blue-500/30 hover:scale-[1.02] hover:-translate-y-0.5
+           active:scale-[0.98] active:translate-y-0 transition-all duration-300 ease-out;
+  }
+  
+  /* Secondary button styles */
+  .btn-secondary {
+    @apply w-full px-6 py-3 bg-white border border-slate-200 
+           text-slate-700 font-medium rounded-xl shadow-sm
+           hover:bg-slate-50 hover:shadow-md hover:scale-[1.02] hover:-translate-y-0.5
+           active:scale-[0.98] active:translate-y-0 transition-all duration-300 ease-out;
+  }
+  
+  /* Success button styles */
+  .btn-success {
+    @apply w-full px-6 py-3 bg-gradient-to-r from-emerald-600 to-emerald-700 
+           text-white font-medium rounded-xl shadow-lg shadow-emerald-500/25
+           hover:shadow-xl hover:shadow-emerald-500/30 hover:scale-[1.02] hover:-translate-y-0.5
+           active:scale-[0.98] active:translate-y-0 transition-all duration-300 ease-out;
+  }
+  
+  /* Heading styles */
+  .heading-primary {
+    @apply text-3xl font-bold text-slate-900 mb-2;
+  }
+  
+  .heading-secondary {
+    @apply text-xl font-semibold text-slate-800 mb-4;
+  }
+  
+  /* Link styles */
+  .link-primary {
+    @apply text-blue-600 font-medium hover:text-blue-700 transition-colors duration-200;
+  }
+  
+  /* Container styles */
+  .container-centered {
+    @apply min-h-screen flex items-center justify-center p-4;
+  }
+  
+  .container-max {
+    @apply max-w-md w-full;
+  }
+  
+  /* Form section styles */
+  .form-section {
+    @apply space-y-4;
+  }
+  
+  /* Text styles */
+  .text-muted {
+    @apply text-slate-500 text-sm;
+  }
+  
+  /* Loading animation */
+  .loading-spinner {
+    @apply animate-spin rounded-full h-6 w-6 border-2 border-blue-600 border-t-transparent;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    @apply glass sticky top-0 z-50 px-6 py-4 border-b border-white/10;
+  }
+  
+  /* Booking card styles */
+  .booking-card {
+    @apply glass rounded-2xl p-6 mb-4 transition-all duration-300 
+           hover:shadow-2xl hover:scale-[1.01] cursor-pointer;
+  }
+  
+  /* Time slot styles */
+  .time-slot {
+    @apply px-4 py-2 bg-white/50 border border-slate-200 rounded-lg 
+           hover:bg-blue-50 hover:border-blue-300 hover:shadow-sm
+           transition-all duration-200 cursor-pointer;
+  }
+  
+  .time-slot-selected {
+    @apply px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-700 
+           text-white border-blue-600 rounded-lg shadow-lg shadow-blue-500/25;
+  }
+  
+  /* Alert styles */
+  .alert-success {
+    @apply px-4 py-3 bg-emerald-50 border border-emerald-200 text-emerald-800 
+           rounded-xl shadow-sm;
+  }
+  
+  .alert-error {
+    @apply px-4 py-3 bg-red-50 border border-red-200 text-red-800 
+           rounded-xl shadow-sm;
+  }
+}
