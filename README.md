@@ -1,6 +1,8 @@
-# 📅 Calendly Clone – Scheduling Platform
+# 📅 Schedule Pro – Modern Scheduling Platform
 
-A web-based scheduling platform that allows users to set availability and share a booking link so others can easily schedule meetings — eliminating back-and-forth communication.
+A modern, full-stack scheduling platform that allows users to set availability and share a booking link so others can easily schedule meetings — eliminating back-and-forth communication.
+
+Built with React, Node.js, and MongoDB with a beautiful, responsive UI similar to Calendly.
 
 
 ## 🛠️ Tech Stack
@@ -178,4 +180,4 @@ This project demonstrates the ability to design and build a full-stack applicati
 
 ## 👤 Author
 
-Santosh Terani
+Tarun Reddy
